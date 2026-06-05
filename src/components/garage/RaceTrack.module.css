@@ -1,1 +1,60 @@
+.track {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
 
+.label {
+  color: #555;
+  font-size: 11px;
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.road {
+  flex: 1;
+  position: relative;
+  height: 48px;
+  border-top: 2px solid #2a2a4a;
+  border-bottom: 2px solid #2a2a4a;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.carWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  will-change: left;
+}
+
+.dashes {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #2a2a4a 0px,
+    #2a2a4a 20px,
+    transparent 20px,
+    transparent 40px
+  );
+}
+
+.broken {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.done {
+  color: #2ecc71;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
