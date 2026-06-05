@@ -1,1 +1,71 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #2a2a4a;
+}
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.engineControls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.selectBtn,
+.deleteBtn,
+.startBtn,
+.stopBtn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.2s;
+}
+
+.selectBtn {
+  background-color: #16213e;
+  border-color: #aaa;
+  color: #aaa;
+}
+
+.deleteBtn {
+  background-color: #16213e;
+  border-color: #e94560;
+  color: #e94560;
+}
+
+.startBtn {
+  background-color: #1a6b3a;
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+
+.stopBtn {
+  background-color: #6b1a1a;
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.selectBtn:disabled,
+.deleteBtn:disabled,
+.startBtn:disabled,
+.stopBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.name {
+  color: #ddd;
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
