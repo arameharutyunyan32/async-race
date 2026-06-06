@@ -53,6 +53,8 @@ export default tseslint.config(
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',
       'react/require-default-props': 'off',
+      'react/jsx-no-bind': 'off',
+      'no-void': ['error', { allowAsStatement: true }],
     },
     settings: {
       react: { version: 'detect' },

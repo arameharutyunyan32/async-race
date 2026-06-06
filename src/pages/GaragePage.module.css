@@ -1,0 +1,38 @@
+.page {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.topBar {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 20px;
+  color: #fff;
+  margin: 8px 0;
+}
+
+.message {
+  color: #888;
+  padding: 16px 0;
+}
+
+.carList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.carRow {
+  display: flex;
+  align-items: center;
+  background-color: #16213e;
+  border-radius: 6px;
+  overflow: hidden;
+}
