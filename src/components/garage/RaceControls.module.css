@@ -1,1 +1,58 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
 
+.raceBtn,
+.resetBtn,
+.generateBtn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.raceBtn {
+  background-color: #2ecc71;
+  color: #000;
+  border-color: #2ecc71;
+}
+
+.raceBtn:hover:not(:disabled) {
+  background-color: #27ae60;
+}
+
+.resetBtn {
+  background-color: transparent;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.resetBtn:hover:not(:disabled) {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.generateBtn {
+  background-color: transparent;
+  color: #aaa;
+  border-color: #555;
+  margin-left: auto;
+}
+
+.generateBtn:hover:not(:disabled) {
+  border-color: #fff;
+  color: #fff;
+}
+
+.raceBtn:disabled,
+.resetBtn:disabled,
+.generateBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
