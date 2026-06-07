@@ -1,0 +1,17 @@
+.page {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.message {
+  color: #888;
+  padding: 16px 0;
+}
