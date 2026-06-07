@@ -1,1 +1,32 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
 
+.th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #aaa;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.row {
+  transition: background-color 0.15s;
+}
+
+.row:hover {
+  background-color: #1a1a3a;
+}
+
+.td {
+  padding: 12px 16px;
+  color: #ddd;
+  font-size: 14px;
+  border-bottom: 1px solid #2a2a4a;
+  vertical-align: middle;
+}
