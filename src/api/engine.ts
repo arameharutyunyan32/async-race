@@ -13,6 +13,10 @@ export async function stopEngine(id: number): Promise<EngineResponse> {
 
 export async function driveEngine(id: number): Promise<DriveResponse> {
   const res = await fetch(`${ENGINE_ENDPOINT}?id=${id}&status=drive`, { method: 'PATCH' });
-  if (res.status === 500) return { success: false };
+
+  if (res.status === 500) {
+    return { success: false };
+  }
+
   return res.json();
 }
