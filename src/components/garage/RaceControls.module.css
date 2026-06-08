@@ -56,3 +56,15 @@
   opacity: 0.3;
   cursor: not-allowed;
 }
+
+@media (max-width: 500px) {
+  .controls {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .generateBtn {
+    margin-left: 0;
+  }
+}

@@ -45,3 +45,9 @@
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+@media (max-width: 500px) {
+  .input {
+    width: 120px;
+  }
+}

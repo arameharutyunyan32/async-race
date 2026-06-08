@@ -36,3 +36,18 @@
   border-radius: 6px;
   overflow: hidden;
 }
+
+@media (max-width: 500px) {
+  .page {
+    padding: 8px 12px;
+  }
+
+  .topBar {
+    gap: 12px;
+  }
+
+  .carRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
